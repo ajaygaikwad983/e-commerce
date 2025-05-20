@@ -23,8 +23,6 @@ export const CartItem: React.FC<CartItemProps> = ({ item }) => {
   const handleDecrement = () => {
     if (item.quantity > 1) {
       updateQuantity(item.id, item.quantity - 1);
-    } else {
-      removeFromCart(item.id);
     }
   };
 
